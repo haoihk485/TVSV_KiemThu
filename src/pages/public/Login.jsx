@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchLogin, resetError } from './AuthSlice.js';
+import { fetchLogin, resetError } from './authSlice.js';
 import { useNavigate } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'

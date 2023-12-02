@@ -4,7 +4,7 @@ import Footer from "../../components/Footer"
 import { useDispatch, useSelector } from "react-redux";
 import { authLoadingSelector, isLogeedInSelector, userSelector } from "../../redux/selectors";
 import { useEffect } from "react";
-import { fetchGetUserInfo, fetchLogout } from "../public/AuthSlice";
+import { fetchGetUserInfo, fetchLogout } from "../public/authSlice";
 import Spinner from "../../components/spinner";
 
 const DepartmentHead = () => {

@@ -2,7 +2,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import StaffNavBar from "../../components/StaffNavBar";
 import Footer from "../../components/Footer";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchGetUserInfo, fetchLogout, fetchRefreshToken } from "../public/AuthSlice";
+import { fetchGetUserInfo, fetchLogout, fetchRefreshToken } from "../public/authSlice";
 import { authLoadingSelector, isLogeedInSelector, userSelector } from "../../redux/selectors";
 import { useEffect } from "react";
 import Spinner from "../../components/Spinner.jsx";
