@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { isLogeedInSelector } from '../redux/selectors';
 import { useNavigate } from 'react-router-dom';
 
-const UserNavBar = () => {
+const UserNavBar = ({ handleLogout }) => {
 
     const isLoggedIn = useSelector(isLogeedInSelector)
 
@@ -44,15 +44,17 @@ const UserNavBar = () => {
 
             <ul className={`md:flex md:items-center ${showMenu ? '' : 'z-[-1] top-[-400px] opacity-0'} md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  transition-all ease-in duration-500 md:shadow-none shadow-md`}>
                 <li className="mx-4 my-6 md:my-0">
-                    <p className="text-lg hover:text-cyan-500 duration-500 cursor-pointer">Trang chủ</p>
+                    <p className="text-lg hover:text-cyan-500 duration-500 cursor-pointer"
+                        onClick={() => navigate('/')}>Trang chủ</p>
                 </li>
                 {isLoggedIn ?
-                    <button className="bg-cerise text-white font-roboto duration-500 px-6 py-2 mx-4 hover:bg-secondary rounded ">
+                    <button className="bg-cerise text-white font-roboto duration-500 px-6 py-2 mx-4 hover:bg-cerise/80 rounded "
+                        onClick={() => { handleLogout() }}>
                         Đăng xuất
                     </button> :
                     <button
                         className="bg-primary text-white font-roboto duration-500 px-6 py-2 mx-4 hover:bg-secondary rounded "
-                        onClick={()=>navigate('/login')}>
+                        onClick={() => navigate('/login')}>
                         Đăng nhập
                     </button>}
             </ul>

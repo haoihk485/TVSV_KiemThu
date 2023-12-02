@@ -16,6 +16,8 @@ import Counsellor from './pages/counsellor/Counsellor'
 import CounsellorHome from './pages/counsellor/CounsellorHome'
 import CounsellorQuestionManage from './pages/counsellor/CounsellorQuestionManage'
 import Home from './pages/public/Home'
+import User from './pages/user/User'
+import CreateQuestion from './pages/user/CreateQuestion'
 
 function App() {
 
@@ -42,6 +44,10 @@ function App() {
             <Route path='home' element={<CounsellorHome />} />
             <Route path='questions' element={<CounsellorQuestionManage />} />
           </Route>
+          <Route path='/user' element={<User />} >
+            <Route path='questions/create' element={<CreateQuestion />}></Route>
+          </Route>
+
         </Routes>
       </BrowserRouter>
     </>

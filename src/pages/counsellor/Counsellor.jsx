@@ -41,7 +41,7 @@ const Counsellor = () => {
             case 'ROLE_SUPERVISOR':
                 return navigate('/supervisor/home')
             case 'ROLE_USER':
-                return navigate('/user/home')
+                return navigate('/')
             case 'ROLE_COUNSELLOR':
                 return navigate('/counsellor/home')
             default:

@@ -42,7 +42,7 @@ const Login = () => {
                     navigate('/supervisor/home')
                     break;
                 case 'ROLE_USER':
-                    navigate('/user/home')
+                    navigate('/')
                     break;
                 case 'ROLE_COUNSELLOR':
                     navigate('/counsellor/home')

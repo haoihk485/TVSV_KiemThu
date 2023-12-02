@@ -46,5 +46,12 @@ export const DHFieldIsLoading = state => state.depHeadField.isLoading
 export const DHFieldTotalPage = state => state.depHeadField.totalPage
 export const DHFieldListDepNotHave = state => state.depHeadField.fieldListDepNotHave
 
+//user Selector 
+export const userDepList = state => state.user.depList
+export const userTopicList = state => state.user.topicList
+export const userIsLoading = state => state.user.isLoading
+export const userTotalPage = state => state.user.totalPage 
+export const userFieldList = state =>state.user.fieldList
+
 
 

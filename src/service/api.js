@@ -4,6 +4,7 @@ import { deleteAllCookies, deleteCookieByName } from '../utils/cookie';
 
 const API = axios.create({
     baseURL: 'https://student-consulting.onrender.com/api',
+    timeout: 5000
 });
 
 API.interceptors.response.use(
