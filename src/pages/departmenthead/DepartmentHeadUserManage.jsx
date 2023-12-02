@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { DHUserIsLoading, DHUserList, DHUserMessage, DHUserTotalPage } from '../../redux/selectors';
 import { ToastContainer, toast } from 'react-toastify';
 import { fetchDHAddUserField, fetchDHCreateCoun, fetchDHGetUsers, fetchDHUpdateUserStatus, resetMessage } from './slice/dHUserSlice';
-import Spinner from '../../components/spinner';
+import Spinner from '../../components/Spinner';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import CreateCounsellor from '../../components/departmentHead/CreateCounsellor';
