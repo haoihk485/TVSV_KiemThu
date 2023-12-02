@@ -18,7 +18,6 @@ import {
 import {
     AdminDepLoadingSelector,
     AdminDepMessage,
-    DepListPageSelector,
     DepListTotalPageSelector,
     DepartmentListSelector
 } from '../../redux/selectors';
@@ -36,7 +35,6 @@ const AdminDepartmentMange = () => {
 
     const loading = useSelector(AdminDepLoadingSelector)
     const DepartmentList = useSelector(DepartmentListSelector)
-    const page = useSelector(DepListPageSelector)
     const totalPage = useSelector(DepListTotalPageSelector)
     const toastMessage = useSelector(AdminDepMessage)
 
@@ -244,7 +242,7 @@ const AdminDepartmentMange = () => {
                     </table >
                 }
             </div >
-            <Pagination page={page} totalPage={totalPage} handlePagination={handlePagination}></Pagination>
+            <Pagination page={params.page} totalPage={totalPage} handlePagination={handlePagination}></Pagination>
         </>
     )
 }

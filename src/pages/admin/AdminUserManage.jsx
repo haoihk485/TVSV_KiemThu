@@ -29,7 +29,6 @@ const AdminUserManage = () => {
     }
 
     const userList = useSelector(UserListSelector)
-    const page = useSelector(UserListPageSelector)
     const totalPage = useSelector(UserListTotalPageSelector)
     const loading = useSelector(AdminUserLoadingSelector)
     const toastMessage = useSelector(AdminUserMessage)
@@ -43,7 +42,6 @@ const AdminUserManage = () => {
     }, [params])
 
     const handlePagination = (page) => {
-        dispatch(setPage(page))
         setParams({
             ...params,
             page: page,
@@ -238,7 +236,7 @@ const AdminUserManage = () => {
                     </tbody>
                 </table >
             </div>
-            <Pagination page={page} totalPage={totalPage} handlePagination={handlePagination}></Pagination>
+            <Pagination page={params.page} totalPage={totalPage} handlePagination={handlePagination}></Pagination>
         </>
     )
 }

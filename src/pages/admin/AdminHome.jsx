@@ -15,17 +15,17 @@ const AdminHome = () => {
             <div className="flex items-center justify-center min-h-screen">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
                     <div className="bg-ghost-white p-2 rounded-lg shadow-md border hover:bg-gray-200 mx-auto"
-                        onClick={() => navigate('/departmentHead/users')}>
+                        onClick={() => navigate('/admin/users')}>
                         <img src={userManage} alt="" className="w-60 h-60 rounded-lg" />
                         <p className="font-roboto text-lg font-semibold text-center text-primary mt-2">Quản lý người dùng</p>
                     </div>
                     <div className="bg-ghost-white p-2 rounded-lg shadow-md border hover:bg-gray-200"
-                        onClick={() => navigate('/departmentHead/departments')}>
+                        onClick={() => navigate('/admin/departments')}>
                         <img src={departmentManage} alt="" className="w-60 h-60 rounded-lg" />
                         <p className="font-roboto text-lg font-semibold text-center text-primary mt-2">Quản lý phòng ban</p>
                     </div>
                     <div className="bg-ghost-white p-2 rounded-lg shadow-md border hover:bg-gray-200"
-                        onClick={() => navigate('/departmentHead/fields')}>
+                        onClick={() => navigate('/admin/fields')}>
                         <img src={fieldManage} alt="" className="w-60 h-60 rounded-lg" />
                         <p className="font-roboto text-lg font-semibold text-center text-primary mt-2">Quản lý Lĩnh vực</p>
                     </div>

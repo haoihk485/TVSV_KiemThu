@@ -9,7 +9,6 @@ export const userSelector = state => state.auth.user
 export const AdminDepMessage = state => state.adminDepartment.message
 export const AdminDepLoadingSelector = state => state.adminDepartment.isLoading
 export const DepartmentListSelector = state => state.adminDepartment.DepartmentList
-export const DepListPageSelector = state => state.adminDepartment.page
 export const DepListTotalPageSelector = state => state.adminDepartment.totalPage
 export const DepartmentSelector = state => state.adminDepartment.Department
 export const GetDepNameList = state => state.adminDepartment.DepartmentNameList

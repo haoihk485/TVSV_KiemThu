@@ -34,7 +34,6 @@ const AdminFieldManage = () => {
 
     const loading = useSelector(AdminFieldLoadingSelector)
     const fieldList = useSelector(FieldListSelector)
-    const page = useSelector(FieldListPageSelector)
     const totalPage = useSelector(FieldListTotalPageSelector)
     const toastMessage = useSelector(AdminFieldMessage)
 
@@ -204,7 +203,7 @@ const AdminFieldManage = () => {
                             })}
                         </tbody>
                     </table >
-                    <Pagination page={page} totalPage={totalPage} handlePagination={handlePagination}></Pagination>
+                    <Pagination page={params.page} totalPage={totalPage} handlePagination={handlePagination}></Pagination>
                 </div>
         </>
     )
