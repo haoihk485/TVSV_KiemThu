@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 import bg from '../../assets/img/login_background.png'
 import Spinner from '../../components/Spinner.jsx';
-import LoginForm from '../../components/Loginform';
+import LoginForm from '../../components/LoginForm';
 import {
     authLoadingSelector,
     errorAuthSelector,
