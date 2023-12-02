@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import authSlice from '../pages/public/AuthSlice'
+import authSlice from '../pages/public/authSlice'
 import adminUserSlice from '../pages/admin/slice/adminUserSlice'
 import adminDepartmentSlice from '../pages/admin/slice/adminDepartmentSlice'
 import adminFieldSlice from '../pages/admin/slice/adminFieldSlice'
