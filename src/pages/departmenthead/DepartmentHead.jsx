@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { authLoadingSelector, isLogeedInSelector, userSelector } from "../../redux/selectors";
 import { useEffect } from "react";
 import { fetchGetUserInfo, fetchLogout } from "../public/authSlice";
-import Spinner from "../../components/spinner";
+import Spinner from "../../components/Spinner";
 
 const DepartmentHead = () => {
 
