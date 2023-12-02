@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchGetUserInfo, fetchLogout, fetchRefreshToken } from "../public/AuthSlice";
 import { authLoadingSelector, isLogeedInSelector, userSelector } from "../../redux/selectors";
 import { useEffect } from "react";
-import Spinner from "../../components/spinner";
+import Spinner from "../../components/Spinner.jsx";
 
 const Admin = () => {
     const dispatch = useDispatch();

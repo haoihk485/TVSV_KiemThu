@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router';
 import { useEffect, useState } from 'react';
 import { fetchAdminGetUsers, fetchCreateUser, fetchUserStatusUpdate, resetMessage, setPage } from './slice/adminUserSlice';
 import { AdminUserLoadingSelector, AdminUserMessage, UserListPageSelector, UserListSelector, UserListTotalPageSelector } from '../../redux/selectors';
-import Spinner from '../../components/spinner';
+import Spinner from '../../components/Spinner';
 import { toast, ToastContainer } from 'react-toastify';
 import CreateUser from '../../components/admin/CreateUser';
 import CoordinateUser from '../../components/admin/CoordinateUser';

@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { DHFieldIsLoading, DHFieldList, DHFieldMessage, DHFieldTotalPage } from "../../redux/selectors";
 import { ToastContainer, toast } from "react-toastify";
 import Pagination from "../../components/Pagination";
-import Spinner from "../../components/spinner";
+import Spinner from "../../components/Spinner";
 import AddFields from "../../components/departmentHead/AddFields";
 
 const DepartmentHeadFieldManage = () => {

@@ -22,7 +22,7 @@ import {
     DepListTotalPageSelector,
     DepartmentListSelector
 } from '../../redux/selectors';
-import Spinner from '../../components/spinner';
+import Spinner from '../../components/Spinner';
 import { useState } from 'react';
 import UpdateDepartment from '../../components/admin/UpdateDepartment'
 import CreateDepartment from '../../components/admin/CreateDepartment';

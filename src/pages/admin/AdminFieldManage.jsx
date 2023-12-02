@@ -22,7 +22,7 @@ import {
     FieldListSelector,
     FieldListTotalPageSelector
 } from '../../redux/selectors';
-import Spinner from '../../components/spinner'
+import Spinner from '../../components/Spinner'
 import { useState } from 'react';
 import CreateField from '../../components/admin/CreateField';
 import { toast, ToastContainer } from 'react-toastify';

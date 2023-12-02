@@ -5,7 +5,7 @@ import { authLoadingSelector, errorAuthSelector, succesRegisterSelector } from '
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-import Spinner from '../../components/spinner';
+import Spinner from '../../components/Spinner';
 import RegisterForm from '../../components/RegisterForm';
 import bg from '../../assets/img/login_background.png'
 import { useNavigate } from 'react-router';
