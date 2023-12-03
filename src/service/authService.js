@@ -12,6 +12,7 @@ export const loginService = async (data) => {
         })
         return response.data
     } catch (error) {
+        console.log(error.response);
         return error.response.data
     }
 }
